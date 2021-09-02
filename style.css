@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    max-width: 1200px;
+    background:linear-gradient(0deg, rgba(0, 2, 26, 0.7), rgba(0, 2, 26, 0.7)), url('./images/backgroundPort.jpg');
+    background-size:cover;
+    display: flex;
+    font-family: 'Merriweather', serif;
+}
+
+h1 {
+    font-size: 40px;
+    color: rgb(240, 240, 240);
+}
+h2 {
+    color: rgb(198, 198, 209);
+}
+
+.nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background:linear-gradient(0deg, rgba(18, 25, 107, 0.2), rgba(0, 2, 26, 0.2));
+    background-size:cover;
+    color: #fff;
+    width: 23%;
+}
+.pic {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0px 0 10px 0;
+    line-height: 26px;
+}
+.pro-pic {
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 50%;
+    width: 130px;
+    margin-bottom: 10px;
+}
+.title {
+    font-size: 14px;
+    color: rgb(198, 198, 209);
+}
+.list {
+    /* margin-top: 14px; */
+    list-style: none;
+
+    line-height: 26px;
+}
+.list li {
+    cursor: pointer;
+}
+.contact-me {
+    margin-top: 130px;
+}
+.mobile-nav {
+    display: none;
+}
+
+.main {
+    width: 77%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 200px;
+    padding: 15px;
+}
+.main-title {
+    width: 100%;
+}
+@media only screen and (max-width: 780px) {
+    .main {
+        padding: 14px;
+        width: 73%;
+    }
+    .nav {
+        width: 37%;
+    }
+    .pro-pic {
+        width: 100px;
+    }
+    h1 {
+        font-size: 35px;
+    }
+    h2 {
+        font-size: 20px;
+    }
+  }
+  @media only screen and (max-width: 650px) {
+    body {
+        flex-direction: column;
+    }
+    .main {
+        margin: 100px auto;
+        width: 73%;
+    }
+    .nav {
+        display: none;
+        width: 37%;
+    }
+    .pro-pic {
+        width: 100px;
+    }
+    h1 {
+        font-size: 35px;
+    }
+    h2 {
+        font-size: 20px;
+    }
+    .mobile-nav {
+        display: inline-block;
+        margin-left: auto;
+        padding: 14px;
+        font-size: 28px;
+    }
+    .fa-bars {
+        color: #fff;
+    }
+  }
