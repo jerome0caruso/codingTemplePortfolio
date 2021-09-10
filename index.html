@@ -9,37 +9,136 @@
 </head>
 <body>
     <nav class="nav">
-        <div class="pic">
+        <div class="pic" id="pic">
             <img class="pro-pic" src="./images/propic.jpeg"> 
             <p>Jerome Caruso</p>
             <p><span class="title">Full Stack Developer</span></p>
         </div>
         <div class="nav-links">
             <ul class="list">
-                <li>Portfolio</li>
-                <li>Resume</li>
-                <li>About Me</li>
-                <li>Contact Me</li>
+                <li class="portfolio-link">Portfolio</li>
+                <li class="aboutMe-link">About Me</li>
+                <li class="resume-link">Resume</li>
+                <li class="contactMe-link">Contact Me</li>
+                <li ><a href="https://www.jerome0caruso.com">Old Portfolio</a></li>
+                <li class="contactMe-link"><a href="https://www.jerome0caruso.com">Old Portfolio</a></li>
             </ul>
         </div>
         <div class="contact-me">
             <h4>Get in touch</h4>
-            <img src="">
-            <img src="">
-            <img src="">
-            <img src="">
+            <div class="icons">
+                <a href="https://github.com/jerome0caruso"><i class="fab fa-github"></a></i>
+                <a href="https://www.linkedin.com/in/jerome-caruso-42939a200/"><i class="fab fa-linkedin"></a></i>
+                <a href="mailto: jerome0caruso@gmail.com"><i class="fas fa-envelope-square"></a></i>
+                <a href="https://stackoverflow.com/users/12648976/jeromecode"><i class="fab fa-stack-overflow"></a></i>
+            </div>
         </div>
     </nav>
     <nav class="mobile-nav">
+        <div class="iconsM">
+            <a href="https://github.com/jerome0caruso"><i class="fab fa-github"></a></i>
+            <a href="https://www.linkedin.com/in/jerome-caruso-42939a200/"><i class="fab fa-linkedin"></a></i>
+            <a href="mailto: jerome0caruso@gmail.com"><i class="fas fa-envelope-square"></a></i>
+            <a href="https://stackoverflow.com/users/12648976/jeromecode"><i class="fab fa-stack-overflow"></a></i>
+        </div>
         <i class="fas fa-bars"></i>
     </nav>
+    <div class="mobileLinks hidden">
+        <ul>
+            <li class="portfolio-linkM">Portfolio</li>
+            <li class="aboutMe-linkM">About Me</li>
+            <li class="resume-linkM">Resume</li>
+            <li class="contactMe-linkM">Contact Me</li>
+            <li><a href="https://www.jerome0caruso.com">Old Portfolio</a></li>
+        </ul>
+    </div>
 
-    <main class="main">
-        <section class="main-title">
-            <h1>Hello, I'm Jerome Caruso</h1>
-            <h2>A full stack developer from Chicago, IL</h2>
-        </section>
+    <main class="main " id="main">
+        <div class="main-container">
+            <section class="main-title">
+                <h1>Hello, I'm Jerome Caruso</h1>
+                <h2>A full stack developer from Chicago, IL</h2>
+            </section>
+        </div>    
     </main>
+    <section class="portfolio hidden" id="portfolio" > 
+        <div class="portfolio-container">
+            <h2>My portfolio page coming soon!</h2>
+        </div>
+    </section>
+    <section class="aboutMe hidden" id="aboutMe">
+
+        <div class="about-container">
+            <div class="pic picM" id="pic">
+
+                <img class="pro-picM" src="./images/propic.jpeg"> 
+
+            </div>
+            <h3>About:</h3>
+            <p>I am a highly motivated person who loves to problem solve and
+               work through different scenarios to find all possible solutions that may work for each project. I enjoy working in large groups to learn and
+               contribute to find solutions but I also find comfort in working on projects alone to create solutions through my own resources. I 
+               really enjoy the challenges of writing code and trying to create logical and more efficient code for each problem I come across.  I have been self teaching 
+               myself coding for the last 8 months utilizing udemy, coursera, youtube and stackoverflow to help learn different concepts in multiple languages.
+                 I would love to find a full time job working in web development in the Chicago area.</p>
+            <h3 class="second-heading">Skills:</h3>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>React</li>
+                <li>PHP</li>
+                <li>Python</li>
+            </ul>
+            <h3 class="second-heading">Personal:</h3>
+            <p>I live in Chicago with my two dogs that I adoped many years back.  I love to bike to the beach and play vollyball along lake Michigan.  I really
+                enjoy traveling and learning different languages as well as eating and trying to cook different cuisines.  
+            </p>
+        </div>
+
+    </section>
+    <section class="resume hidden " id="resume">
+        <div>
+            <a href="http://myjavascriptprojects.com/resume/JeromeCarusoResume.pdf"><img class="resumeImg" src="images/resume1.jpg"></a>
+        </div>
+        <div>
+            <a href="http://myjavascriptprojects.com/resume/JeromeCarusoResume.pdf"><img class="resumeImg" src="images/resume2.jpg"></a>
+        </div>
+    </section>
+    <section class="contactMe hidden" id="contactMe">
+        <div class="contactMe-container">
+            <h3>Get in touch</h3>
+            <form action="https://formsubmit.co/jerome0caruso@gmail.com" method="POST">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_next" value="http://127.0.0.1:5500/">
+
+                <div class="f-name">
+                    <label for="f-name"><p>Full Name</p></label>
+                </div>
+                <div class="f-email">
+                    <input type="text" id="f-name" size="30" name="name" placeholder="your name here..." required>
+                </div>
+                
+                <div class="f-email">
+                    <label for="f-email"><p>Email</p></label>
+                </div>
+                <div class="f-email">
+                    <input type="email" id="f-email" name="email" size="40" placeholder="jonDoe@yahoo.com" required><div class="check-box"> <i class="far fa-check-circle"></i></div>
+                </div>
+
+                <div class="col-25">
+                    <label for="f-text"><p>Subject</p></label>
+                </div>
+                <div class="f-text">
+                    <textarea type="text" id="f-text" resize ="none" name="subject" placeholder="Write something.." ></textarea>
+                </div>
+
+                <div class="f-submit">
+                    <button type="submit" id="formBtn" value="Submit">Send</button>
+                </div>
+            </form>
+        </div>
+    </section>
     <script src="script.js"></script>
 </body>
 </html>
